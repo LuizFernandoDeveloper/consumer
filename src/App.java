@@ -20,7 +20,7 @@ public class App {
 
         Consumer<Product> cons = p -> p.setPrice(p.getPrice() * 1.1);
 
-        productsList.forEach(Product::nonStaticPriceUpdate);
+        productsList.forEach(cons);
 
         System.out.println("--------------------");
 
