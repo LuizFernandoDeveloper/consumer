@@ -17,7 +17,7 @@ public class App {
 
         productsList.forEach(System.out::println);
 
-        productsList.forEach(Product::StaticPriceUpdate);
+        productsList.forEach(Product::nonStaticPriceUpdate);
 
         System.out.println("--------------------");
 
