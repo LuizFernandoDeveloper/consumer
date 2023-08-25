@@ -18,9 +18,7 @@ public class App {
 
         productsList.forEach(System.out::println);
 
-        Consumer<Product> cons = p -> p.setPrice(p.getPrice() * 1.1);
-
-        productsList.forEach(cons);
+        productsList.forEach(p -> p.setPrice(p.getPrice() * 1.1));
 
         System.out.println("--------------------");
 
